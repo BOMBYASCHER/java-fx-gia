@@ -5,6 +5,7 @@ module io.hexlet.javafx {
     requires org.controlsfx.controls;
     requires static lombok;
     requires java.sql;
+    requires org.postgresql.jdbc;
 
     opens io.hexlet.javafx to javafx.fxml;
     exports io.hexlet.javafx;

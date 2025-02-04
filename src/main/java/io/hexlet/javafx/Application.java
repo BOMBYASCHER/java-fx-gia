@@ -27,7 +27,8 @@ public class Application extends javafx.application.Application {
     public void start(Stage stage) {
         Application.stage = stage;
         databaseManager = new DatabaseManager();
-        databaseManager.openConnection();
+        databaseManager.openConnection()
+                .initialize();
         refreshMainWindow();
     }
 
